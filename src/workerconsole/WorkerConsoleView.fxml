@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="698.0" minWidth="1380.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workerconsole.WorkerConsoleViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="553.0" layoutX="255.0" layoutY="117.0" stroke="BLACK" strokeType="INSIDE" width="839.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45431286096572876" green="0.751090407371521" blue="0.8684210777282715" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7059927582740784" green="0.0560000017285347" blue="0.800000011920929" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="433.0" layoutY="25.0" prefHeight="51.0" prefWidth="481.0" text="Worker Console" textFill="#b91616">
+         <font>
+            <Font name="Forte" size="63.0" />
+         </font>
+      </Label>
+      <Label layoutX="273.0" layoutY="164.0" text="NAME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="273.0" layoutY="245.0" text="MOBILE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMob" layoutX="272.0" layoutY="283.0" prefHeight="30.0" prefWidth="434.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="280.0" layoutY="326.0" text="ADDRESS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" layoutX="274.0" layoutY="364.0" prefHeight="30.0" prefWidth="768.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="276.0" layoutY="409.0" text="SPECIALIZATION" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboSpl" layoutX="274.0" layoutY="443.0" onAction="#doFill" prefHeight="25.0" prefWidth="768.0" />
+      <TextField fx:id="txtSpl" layoutX="277.0" layoutY="490.0" prefHeight="77.0" prefWidth="768.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="883.0" layoutY="584.0" mnemonicParsing="false" onAction="#doUpdate" prefHeight="55.0" prefWidth="163.0" text="UPDATE" textFill="#154da8">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="280.0" layoutY="585.0" mnemonicParsing="false" onAction="#doSave" prefHeight="55.0" prefWidth="175.0" text="SAVE" textFill="#154da8">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="494.0" layoutY="584.0" mnemonicParsing="false" onAction="#doNew" prefHeight="55.0" prefWidth="150.0" text="NEW" textFill="#154da8">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="691.0" layoutY="585.0" mnemonicParsing="false" onAction="#doDelete" prefHeight="55.0" prefWidth="150.0" text="DELETE" textFill="#154da8">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="590.0" layoutY="187.0" mnemonicParsing="false" onAction="#doFetch" prefHeight="42.0" prefWidth="116.0" text="FETCH" textFill="#154da8">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="img" fitHeight="185.0" fitWidth="298.0" layoutX="743.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="836.0" layoutY="313.0" mnemonicParsing="false" onAction="#doBrowse" prefHeight="30.0" prefWidth="97.0" text="BROWSE" textFill="#154da8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtName" layoutX="272.0" layoutY="201.0" prefHeight="30.0" prefWidth="298.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="302.0" fitWidth="238.0" layoutX="14.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(DESKTOP-2TJTN45)/Downloads/new4.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="280.0" fitWidth="232.0" layoutX="1114.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(DESKTOP-2TJTN45)/Downloads/new6.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

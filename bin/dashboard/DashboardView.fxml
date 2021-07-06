@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="698.0" minWidth="1380.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.DashboardViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="59.0" stroke="BLACK" strokeType="INSIDE" width="1380.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6393054127693176" green="0.12919999659061432" blue="0.7599999904632568" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.17159999907016754" green="0.7799999713897705" blue="0.7602325081825256" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="285.0" layoutX="575.0" layoutY="375.0" onMouseClicked="#doWorkerGoogler" stroke="BLACK" strokeType="INSIDE" width="269.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.25712719559669495" green="0.6838358640670776" blue="0.8815789222717285" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7532650828361511" green="0.4663742780685425" blue="0.7631579041481018" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="285.0" layoutX="215.0" layoutY="375.0" onMouseClicked="#doOrderGoogler" stroke="BLACK" strokeType="INSIDE" width="269.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.25712719559669495" green="0.6838358640670776" blue="0.8815789222717285" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7532650828361511" green="0.4663742780685425" blue="0.7631579041481018" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="285.0" layoutX="1088.0" layoutY="70.0" onMouseClicked="#doDelivered" stroke="BLACK" strokeType="INSIDE" width="269.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.25712719559669495" green="0.6838358640670776" blue="0.8815789222717285" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7532650828361511" green="0.4663742780685425" blue="0.7631579041481018" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="285.0" layoutX="737.0" layoutY="70.0" onMouseClicked="#doCompleted" stroke="BLACK" strokeType="INSIDE" width="269.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.25712719559669495" green="0.6838358640670776" blue="0.8815789222717285" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7532650828361511" green="0.4663742780685425" blue="0.7631579041481018" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="285.0" layoutX="390.0" layoutY="69.0" onMouseClicked="#doMeasureRecord" stroke="BLACK" strokeType="INSIDE" width="269.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.25712719559669495" green="0.6838358640670776" blue="0.8815789222717285" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7532650828361511" green="0.4663742780685425" blue="0.7631579041481018" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="285.0" layoutX="41.0" layoutY="69.0" onMouseClicked="#doWorkerConsole" stroke="BLACK" strokeType="INSIDE" width="269.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.25882354378700256" green="0.6823529601097107" blue="0.8823529481887817" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7529411911964417" green="0.46666666865348816" blue="0.7647058963775635" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="632.0" layoutY="-2.0" prefHeight="59.0" prefWidth="269.0" text="DASHBOARD" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="44.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="199.0" fitWidth="228.0" layoutX="79.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(DESKTOP-2TJTN45)/Downloads/new5.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="219.0" fitWidth="177.0" layoutX="440.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(DESKTOP-2TJTN45)/Downloads/new6.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="211.0" fitWidth="215.0" layoutX="764.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(DESKTOP-2TJTN45)/Downloads/new4.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="71.0" layoutY="305.0" prefHeight="53.0" prefWidth="215.0" text="Worker Console" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="442.0" layoutY="301.0" prefHeight="53.0" prefWidth="193.0" text="Measurement" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="766.0" layoutY="300.0" prefHeight="53.0" prefWidth="222.0" text="Completed orders" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="211.0" fitWidth="215.0" layoutX="1115.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(DESKTOP-2TJTN45)/Downloads/new3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="268.0" fitWidth="228.0" layoutX="234.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(DESKTOP-2TJTN45)/Downloads/new2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="238.0" fitWidth="193.0" layoutX="612.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(DESKTOP-2TJTN45)/Downloads/taiilor.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="1122.0" layoutY="298.0" prefHeight="53.0" prefWidth="207.0" text="Delivered Orders" textFill="#fff9f9">
+         <font>
+            <Font name="Forte" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="253.0" layoutY="603.0" prefHeight="53.0" prefWidth="193.0" text="Orders-Googler" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="607.0" layoutY="603.0" prefHeight="53.0" prefWidth="207.0" text="Workers-Googler" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

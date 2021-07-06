@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="698.0" minWidth="1380.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workertableview.WorkerTableViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="680.0" layoutX="19.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="1351.0">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4649122953414917" green="0.31578946113586426" blue="0.8421052694320679" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7061403393745422" green="0.16447368264198303" blue="0.7894737124443054" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <Button layoutX="603.0" layoutY="371.0" mnemonicParsing="false" onAction="#doShowAll" prefHeight="58.0" prefWidth="150.0" text="Show All" textFill="#501b94">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblWorkers" layoutX="378.0" layoutY="453.0" prefHeight="200.0" prefWidth="624.0" />
+      <Label layoutX="511.0" layoutY="24.0" text="Worker Table View" textFill="#0a0a0a">
+         <font>
+            <Font name="Forte" size="43.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="260.0" fitWidth="333.0" layoutX="547.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(DESKTOP-2TJTN45)/Downloads/new8.jpg" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

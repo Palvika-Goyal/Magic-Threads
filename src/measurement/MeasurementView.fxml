@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="698.0" minWidth="1380.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="measurement.MeasurementViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="556.0" layoutX="271.0" layoutY="131.0" stroke="BLACK" strokeType="INSIDE" width="808.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4941176474094391" green="0.37254902720451355" blue="0.7254902124404907" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Label layoutX="466.0" layoutY="57.0" text="Measurement Recorder" textFill="#d62020">
+         <font>
+            <Font name="Forte" size="46.0" />
+         </font>
+      </Label>
+      <Label layoutX="312.0" layoutY="304.0" text="Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="563.0" layoutY="304.0" text="Mobile">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="515.0" text="Days">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="312.0" layoutY="428.0" text="Measurements">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="365.0" text="Category">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="312.0" layoutY="333.0" prefHeight="25.0" prefWidth="238.0" />
+      <TextField fx:id="txtMob" layoutX="563.0" layoutY="333.0" prefHeight="25.0" prefWidth="259.0" />
+      <ComboBox fx:id="comboDay" layoutX="312.0" layoutY="544.0" onAction="#doSelectDate" prefHeight="25.0" prefWidth="357.0" />
+      <Label layoutX="567.0" layoutY="363.0" text="Specialists">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datee" layoutX="692.0" layoutY="544.0" onAction="#doSelectDays" prefHeight="25.0" prefWidth="323.0" />
+      <Label layoutX="693.0" layoutY="516.0" text="Date of Delivery">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="845.0" layoutY="362.0" text="Price">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="845.0" layoutY="324.0" mnemonicParsing="false" onAction="#doFind" prefHeight="34.0" prefWidth="174.0" text="FETCH" textFill="#6d16a8">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <TextField fx:id="txtSpl" layoutX="313.0" layoutY="598.0" prefHeight="25.0" prefWidth="706.0" />
+      <Label layoutX="313.0" layoutY="573.0" text="Special Requirement">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="312.0" layoutY="635.0" mnemonicParsing="false" onAction="#doSave" prefHeight="34.0" prefWidth="357.0" text="Save " textFill="#6d16a8">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button layoutX="682.0" layoutY="635.0" mnemonicParsing="false" onAction="#doNew" prefHeight="34.0" prefWidth="344.0" text="New" textFill="#6d16a8">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <ImageView fx:id="img" fitHeight="157.0" fitWidth="275.0" layoutX="514.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="txtPrice" layoutX="845.0" layoutY="385.0" prefHeight="25.0" prefWidth="174.0" />
+      <ComboBox fx:id="comboCategory" layoutX="312.0" layoutY="392.0" onAction="#doFillOther" prefHeight="25.0" prefWidth="238.0" />
+      <ComboBox fx:id="comboSpl" layoutX="563.0" layoutY="388.0" prefHeight="25.0" prefWidth="259.0" />
+      <TextArea fx:id="txtMeasure2" layoutX="310.0" layoutY="451.0" prefHeight="58.0" prefWidth="700.0" />
+      <ImageView fitHeight="281.0" fitWidth="200.0" layoutX="42.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(DESKTOP-2TJTN45)/Downloads/new5.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="281.0" fitWidth="200.0" layoutX="1133.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../My%20PC%20(DESKTOP-2TJTN45)/Downloads/new7.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
